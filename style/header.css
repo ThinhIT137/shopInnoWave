@@ -1,0 +1,420 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #f0f0f0;
+    z-index: -99999;
+    height: 100%;
+    overflow-x: auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* Màn hình tối */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 100; /* Tăng z-index lên để nó nằm trên các thành phần khác */
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8%;
+    color: #ccc;
+    box-shadow: 0 0 10px 0 #0000005e;
+    z-index: 1000;
+}
+.header section {
+    width: 100%;
+    background: linear-gradient(to right, #333333, #cccccc, #333333);
+    /* background: linear-gradient(135deg, #090505 0%, rgb(78, 141, 242) 100%); */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+} 
+.header section .swiper {
+    width: 50%;
+    height: fit-content;
+    margin-left: 40px;
+    padding-top: 1em;
+}
+.header section .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    font-weight: bold;
+}
+.hotline div, .hotline a {
+    color: white;
+    font-weight: bold;
+    padding: 0 0.3em;
+}
+.header section .swiper-slide span {
+    margin-left: 10px;
+}
+.hotline {
+    display: flex;
+    width: fit-content;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerMain_main {
+    display: flex;
+    background-color: #222;
+    justify-content: space-around;
+    align-items: center;    
+}
+.headerMain_main .logo {
+    position: relative;
+    right: 5%;
+}
+.headerMain_main .logo i {
+    font-size: 20px;
+    color: white;
+    background-color: hsla(0,0%,100%,.2);
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.headerMain_main .logo span {
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+    color: white;
+    /* position: relative;
+    top: 5px; */
+}
+.headerMain_main .menu {
+    position: relative;
+    right: 20%;
+    padding: 20px;
+}
+.headerMain_main .menu, .shoping {
+    width: 10%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.headerMain_main .menu div {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: hsla(0,0%,100%,.2);
+    color: white;
+    font-weight: normal;
+    padding-left: 20px;
+}
+.headerMain_main .shoping {
+    position: absolute;
+    left: 80%;
+}
+.headerMain_main .shoping div {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: hsla(0,0%,100%,.2);
+    font-weight: normal;
+    padding-left: 20px;
+}
+.headerMain_main .shoping div a {
+    color: white;
+}
+.headerMain_main .search {
+    width: 436px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    display: flex;
+    background-color: aliceblue;
+    align-items: center;
+    height: 40px;
+    position: absolute;
+    left: 35%;
+}
+.headerMain_main .search input {
+    width: 350px;
+    border: none;
+    font-size: 100%;
+    padding: 0 10px;
+    margin: 8px;
+    height: 20px;
+    background-color: aliceblue;
+}
+.headerMain_main .search input:focus {
+    outline: none;
+    border: none;
+}
+.headerMain_main .search button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    position: relative;
+    left: 10px;
+    padding: auto;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 50%;
+    box-sizing: border-box;
+}   
+.headerMain_main .user {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    position: relative;
+    left: 5%;
+}
+.headerMain_main .user div {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: hsla(0,0%,100%,.2);
+    width: 24px;
+    height: 24px;
+    transform: scale(1.2);
+}
+.headerMain_main .user div a i {
+    color: rgb(210, 216, 221);
+}
+.main-menu {
+    box-shadow: 0 0 10px 0 #0000005e;
+    width: 12%;
+    height: 500px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 6.1em;
+    background-color: white;
+    left: 16.5%;
+    display: none;
+    z-index: 1000;
+}
+.main-menu .item {  
+    margin: 10px auto;
+    padding: 0 10px;
+    position: relative;
+    left: 5px;  
+}
+.main-menu hr {
+    width: 92%;
+    position: relative;
+    right: 6px;
+}
+.main-menu .icon:hover a {
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 10px 10px 10px 5px;
+    display: inline-block;
+    width: 95%;
+    box-sizing: border-box;
+}
+.main-menu .main-DT:hover + .mainMain-phone, .mainMain-phone:hover{
+    display: block;
+    z-index: 10;
+}
+.menu:hover + .mainMain-menu .main-menu, .main-menu:hover {
+    display: block;
+    z-index: 10;
+}
+.icon:hover div{
+    background-color: #e4dfdf5b;
+    border-radius: 10px;
+}
+.mainMain-phone .mainMainPhone {
+    position: absolute;
+    top: 1px;
+    left: 9.5em;
+    width: 1000px;
+    display: flex;
+    height: 500px;
+    box-shadow: 0 0 10px 0 #0000005e;
+    border-radius: 10px;
+}
+.mainMain-phone {
+    display: none;
+} 
+.mainMain-phone .mainMainPhone .main-phone {
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    box-sizing: border-box;
+    margin-top: -1px;
+    width: 700px;
+    background-color: white; 
+    overflow: auto;
+}
+.mainMain-phone .mainMainPhone .main-phone .rowRow{
+    display: flex;
+}
+.mainMain-phone .mainMainPhone .main-phone .row .row1{
+    margin: 10px;
+    line-height: 1.2;
+}
+.mainMain-phone .mainMainPhone .main-phone .row .row1 > a{
+    font-size: 20px;
+    font-weight: bold;
+}
+.mainMain-phone .mainMainPhone .main-phone .row .row1 a:hover{
+    border-bottom: 1px solid black;
+    padding-bottom: 0;
+}
+.mainMain-phone .mainMainPhone .main-phone .row .row1 div {
+    margin: 5px 0;
+    width: auto;
+}
+.mainMain-phone .mainMainPhone .main-phone .row .row1 div > a{
+    font-size: 16px;
+    padding: 10px;
+}
+.mainMain-phone .mainMainPhone .main-phone , .main-hot span{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.mainMain-PK {
+    display: none;  
+}
+.mainMain-PK .mainMainPK {
+    position: absolute;
+    top: 1px;
+    left: 9.5em;
+    width: 1000px;
+    display: flex;
+    height: 500px;
+    box-shadow: 0 0 10px 0 #0000005e;
+    border-radius: 10px;
+}
+.mainMain-PK .mainMainPK .main-PK {
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    box-sizing: border-box;
+    margin-top: -1px;
+    width: 700px;
+    background-color: white;
+}
+.mainMain-PK .mainMainPK .hot-PK {
+    border-left: none;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    margin-top: -1px;
+    width: 350px;
+    background-color: #f0f0f0;   
+}
+.mainMain-phone .mainMainPhone .main-hot {
+    border-left: none;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    box-sizing: border-box;
+    margin-top: -1px;
+    width: 350px;
+    background-color: #f0f0f0;  
+    overflow: auto;
+}
+.phone-PL .item {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.phone-PL .item img {
+    width: 35px;
+    height: auto;
+}
+.phone-PL .item span {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.phone-PL .item a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.phone-PL .item:hover {
+    background-color: #ccc;
+}
+.phone-NB {
+    display: flex;
+    justify-content: space-around;
+}
+.phone-NB .phone {
+    border: 1px solid black;
+    padding: 0 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.phone-NB .phone span {
+    padding: 0 0 0 10px;
+}
+.phone-NB .phone:hover {
+    background-color: #ccc;
+}
+.phone-NB .phone a {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.main-menu .main_DT {
+    border-radius: 10px 0 0 10px;
+}
+.main-menu .main-DT:hover + .mainMain-phone, .mainMain-phone:hover {
+    display: block;
+}
+.main-menu .main-PK:hover + .mainMain-PK, .mainMain-PK:hover {
+    display: block;
+}
+.phone-NB .phone-PK{
+    width: 100%;
+    font-size: 13px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.accessories .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+.accessories .row .row1 div {
+    padding: 5px 10px;
+}
+.header .deal {
+    display: flex;
+    position: relative; 
+    background-color: white; 
+    padding: 0 20px; 
+    height: 40px;
+    width: 100%;
+    align-items: center;
+}
+.header .deal div {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.header .deal div span {
+    padding: 0 10px;
+}
+*::-webkit-scrollbar {
+    width: 10px;
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
