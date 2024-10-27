@@ -21,7 +21,7 @@
       "specialFeatures": "Face ID, LiDAR Scanner",
       "weight": "240 grams",
       "releaseDate": "2024-09-15",
-      "image": "/images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
+      "image": "images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
     },
     {
       "id": "S2",
@@ -44,7 +44,7 @@
       "specialFeatures": "Face ID",
       "weight": "200 grams",
       "releaseDate": "2024-09-15",
-      "image": "/images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
+      "image": "images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
     },
     {
       "id": "S3",
@@ -67,7 +67,7 @@
       "specialFeatures": "Face ID, LiDAR Scanner",
       "weight": "210 grams",
       "releaseDate": "2023-09-15",
-      "image": "/images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
+      "image": "images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
     }
   ,
   {
@@ -91,7 +91,7 @@
     "specialFeatures": "Face ID",
     "weight": "194 grams",
     "releaseDate": "2022-09-15",
-    "image": "/images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
+    "image": "images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
   },
   {
     "id": "S5",
@@ -114,7 +114,7 @@
     "specialFeatures": "Face ID, LiDAR Scanner",
     "weight": "238 grams",
     "releaseDate": "2021-09-24",
-    "image": "/images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
+    "image": "images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
   },
   {
     "id": "S6",
@@ -137,7 +137,7 @@
     "specialFeatures": "Face ID",
     "weight": "164 grams",
     "releaseDate": "2020-10-23",
-    "image": "/images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
+    "image": "images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
   },
   {
     "id": "S7",
@@ -160,7 +160,7 @@
     "specialFeatures": "Face ID",
     "weight": "194 grams",
     "releaseDate": "2019-09-20",
-    "image": "/images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
+    "image": "images/images-smartphone/iphone-16-pro-max-tu-nhien-thumb-600x600.jpg"
   }
   ],
   "samsung": [
@@ -185,7 +185,7 @@
       "specialFeatures": "Fingerprint sensor, Wireless charging",
       "weight": "169 grams",
       "releaseDate": "2021-01-29",
-      "image": "/images/images-smartphone/samsung-galaxy-s21-thumb-600x600.jpg"
+      "image": "images/images-smartphone/samsung-galaxy-s21-thumb-600x600.jpg"
     },
     {
       "id": "S2",
@@ -208,7 +208,7 @@
       "specialFeatures": "Fingerprint sensor, Wireless charging, S Pen support",
       "weight": "228 grams",
       "releaseDate": "2021-01-29",
-      "image": "/images/images-smartphone/samsung-galaxy-s21-ultra-thumb-600x600.jpg"
+      "image": "images/images-smartphone/samsung-galaxy-s21-ultra-thumb-600x600.jpg"
     },
     {
       "id": "S3",
@@ -231,7 +231,7 @@
       "specialFeatures": "Fingerprint sensor, Wireless charging, S Pen support",
       "weight": "208 grams",
       "releaseDate": "2020-08-21",
-      "image": "/images/images-smartphone/samsung-galaxy-note-20-ultra-thumb-600x600.jpg"
+      "image": "images/images-smartphone/samsung-galaxy-note-20-ultra-thumb-600x600.jpg"
     }
   ]
 }
