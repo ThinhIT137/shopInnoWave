@@ -480,7 +480,7 @@ a {
         display: none;
     }
     .header .headerMain_main {
-        padding-left: 5em ;
+        padding-left: 6em ;
         /* padding-top: 1em;
         padding-bottom: 1em; */
     }
@@ -496,5 +496,12 @@ a {
     .header .main-menu .item {
         font-size: 25px;
     }
-
+    /* .header .logo i{
+        font-size: 10px;
+    } */
+    .header .logo span{
+        font-size: 20px;
+        margin-top: 60px;
+        display: none;
+    }
 }
